@@ -4,7 +4,7 @@ import (
 )
 
 func groupAnagrams(strs []string) [][]string {
-  kb := make(map[string][]string)
+	kb := make(map[string][]string)
 	for _, str := range strs {
 		key := sortString(str)
 		if _, ok := kb[key]; !ok {
