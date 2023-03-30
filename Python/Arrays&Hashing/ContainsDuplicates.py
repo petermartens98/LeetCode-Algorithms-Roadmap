@@ -13,4 +13,14 @@ class Solution(object):
             seen.append(i)
         return False
         '''
+        # Solution 2
+        '''
         return len(nums) != len(set(nums))
+        '''
+        # Solution 3
+        hashset = set()
+        for n in nums:
+            if n in hashset:
+                return True
+            hashset.add(n)
+        return False
